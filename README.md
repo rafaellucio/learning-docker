@@ -2,7 +2,7 @@
 > Repositório para aprendizado de tecnologias com Docker
 
 ### Prerequisitos
-Para utilizar este projeto Ã© necessÃ¡rio ter a versÃ£o 4.8.0 do Node.js, sugerimos a instalaÃ§Ã£o de um gerenciador de versÃµes Node.js chamado NVM
+Para utilizar este projeto é necessário ter a versão 9.2.0 do Node.js, sugerimos a instalação de um gerenciador de versões Node.js chamado NVM
 
 Unix
 
