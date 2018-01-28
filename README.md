@@ -21,26 +21,7 @@ cd seu_workspace
 git clone https://github.com/rafaellucio/learning-docker.git
 cd learning-docker
 
-cd app1
-npm install
-npm run build
-docker build -t app1 .
-cd ..
-
-cd app2
-npm install
-npm run build
-docker build -t app2 .
-cd ..
-
-cd app3
-npm install
-npm run build
-docker build -t app3 .
-cd ..
-
 cd app
-docker build -t app .
 docker swarm init
 docker stack deploy -c docker-compose.yml apps
 
