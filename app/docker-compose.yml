@@ -20,9 +20,9 @@ services:
       - frontend
   app:
     depends_on:
-      - rafaellucio/app1
-      - rafaellucio/app2
-      - rafaellucio/app3
+      - app1
+      - app2
+      - app3
     image: rafaellucio/app
     ports:
       - "5000:80"
