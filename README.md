@@ -2,17 +2,7 @@
 > Repositório para aprendizado de tecnologias com Docker
 
 ### Prerequisitos
-Para utilizar este projeto é necessário ter a versão 9.2.0 do Node.js, sugerimos a instalação de um gerenciador de versões Node.js chamado NVM
-
-Unix
-
-```shell
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
-nvm install 9.2.0
-```
-
-Windows
-Baixar [nvm-setup](https://github.com/coreybutler/nvm-windows/releases/download/1.1.5/nvm-setup.zip) e next, next, finish
+Instalar o [Docker](https://docs.docker.com/install/)
 
 ### Configurações de DEV
 
