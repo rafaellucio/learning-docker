@@ -23,7 +23,7 @@ services:
       - app1
       - app2
       - app3
-    image: app
+    image: rafaellucio/app
     ports:
       - "5000:80"
     networks:
