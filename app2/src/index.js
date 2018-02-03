@@ -1,8 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import dotenv from 'dotenv'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import registerServiceWorker from './registerServiceWorker'
+import Routes from './routes'
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+dotenv.config()
+
+ReactDOM.render(<Routes />, document.getElementById('app'))
+registerServiceWorker()

@@ -1,31 +1,31 @@
 version: "3"
 services:
-  app1:
-    image: rafaellucio/app1
-    ports:
-      - "5001:80"
-    networks:
-      - frontend
-  app2:
-    image: rafaellucio/app2
-    ports:
-      - "5002:80"
-    networks:
-      - frontend
-  app3:
-    image: rafaellucio/app3
-    ports:
-      - "5003:80"
-    networks:
-      - frontend
   app:
     depends_on:
       - app1
       - app2
       - app3
-    image: rafaellucio/app
+    image: rafaellucio/app:0.0.1
     ports:
-      - "5000:80"
+      - "9000:80"
+    networks:
+      - frontend
+  app1:
+    image: rafaellucio/app1:0.0.1
+    ports:
+      - "9001:80"
+    networks:
+      - frontend
+  app2:
+    image: rafaellucio/app2:0.0.1
+    ports:
+      - "9002:80"
+    networks:
+      - frontend
+  app3:
+    image: rafaellucio/app3:0.0.1
+    ports:
+      - "9003:80"
     networks:
       - frontend
   visualizer:
