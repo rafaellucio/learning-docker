@@ -7,6 +7,7 @@
     "docker:stack:up": "docker stack deploy -c docker-compose.yml apps",
     "docker:stack:rm": "docker stack rm apps",
     "docker:images:rm": "docker rmi $(docker images -a -q)",
+    "docker:container:rm": "docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)",
     "build": "docker build -t rafaellucio/$npm_package_name:$npm_package_version ."
   },
   "keywords": [],
