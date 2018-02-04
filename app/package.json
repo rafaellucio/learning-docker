@@ -4,6 +4,8 @@
   "description": "app",
   "main": "index.js",
   "scripts": {
+    "docker:stack:up": "docker stack deploy -c docker-compose.yml apps",
+    "docker:stack:rm": "docker stack rm apps",
     "build": "docker build -t rafaellucio/$npm_package_name:$npm_package_version ."
   },
   "keywords": [],
